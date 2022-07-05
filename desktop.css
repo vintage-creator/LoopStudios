@@ -1,0 +1,279 @@
+:root {
+  --header: url("image-hero (2).jpg");
+  --main-div: url("image-interactive (2).jpg");
+  --body-margin: 0%;
+  --body-padding: 0%;
+  --footer-color: black;
+  --body-font: 15px;
+  --font-fam: "Josefin Sans", sans-serif;
+}
+
+body,
+html {
+  margin: var(--body-margin);
+  padding: var(--body-padding);
+  font-family: var(--font-fam);
+  font-size: var(--body-font);
+  overflow-x: hidden;
+}
+header {
+  background-image: var(--header);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1em;
+}
+
+nav {
+  display: flex;
+  padding: 3em;
+  justify-content: space-between;
+}
+
+nav > img {
+  width: 13%;
+  height: 13%;
+  padding: 1em;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.ul,
+.lists,
+#copyright {
+  list-style: none;
+  display: flex;
+  margin-right: 1em;
+}
+
+.ul > li,
+.lists > li,
+#copyright > li {
+  text-decoration: none;
+  padding-right: 3em;
+  font-weight: bold;
+  color: hsl(0, 0%, 55%);
+}
+
+#copyright {
+  line-height: 20px;
+  text-align: right;
+  margin-top: -5.2em;
+  display: flex;
+  padding-left: 64.2em;
+  width: 100%;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--font-fam);
+  font-weight: 400;
+  font-size: 45px;
+  color: white;
+  width: 30%;
+  border: 2px solid white;
+  padding: 1em 3em 1em 1em;
+  margin-left: 2em;
+  letter-spacing: 1px;
+}
+
+.maindiv {
+  background-image: var(--main-div);
+  background-repeat: no-repeat;
+  width: 95%;
+  padding: 17em;
+  margin: 6em;
+}
+
+.mainflex {
+  display: flex;
+  margin-top: 3em;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: -1px;
+}
+
+.shift {
+  align-content: left;
+  width: 40%;
+  border: 1px solid white;
+  background-color: white;
+  padding: 8.6em 0em 0em 6em;
+  margin: 18.4em -92em;
+  z-index: 2;
+}
+
+p {
+  margin-top: -1.5em;
+  line-height: 20px;
+  width: 80%;
+  color: hsl(0, 0%, 41%);
+}
+
+.second-div {
+  display: flex;
+  justify-content: space-between;
+  margin: -1em 6em;
+}
+
+button {
+  padding: 1em 4em;
+  height: 50%;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 2px solid hsl(0, 0%, 41%);
+  margin: -0.1em -2em;
+  font-family: "Alata", sans-serif;
+}
+
+h5 {
+  margin: 5em -7em;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: justify;
+  letter-spacing: 1px;
+  stroke: black;
+  stroke-width: 100%;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a b c d"
+    "e f g h";
+  width: 95%;
+}
+
+.one {
+  background-image: url("image-deep-earth (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: 2em 6em;
+  width: 100%;
+  grid-area: a;
+}
+
+.two {
+  background-image: url("image-night-arcade (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: 2em -16em;
+  grid-area: b;
+}
+
+.three {
+  background-image: url("image-soccer-team (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: 2em 4em;
+  grid-area: c;
+}
+
+.four {
+  background-image: url("image-grid (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: 2em -14em;
+  grid-area: d;
+}
+
+.five {
+  background-image: url("image-from-above (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: -18em 6em;
+  grid-area: e;
+}
+
+.six {
+  background-image: url("image-pocket-borealis (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: -18em -16em;
+  grid-area: f;
+}
+
+.seven {
+  background-image: url("image-curiosity (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: -18em 4em;
+  grid-area: g;
+}
+
+.eight {
+  background-image: url("image-fisheye (2).jpg");
+  background-repeat: no-repeat;
+  padding: 15em;
+  margin: -18em -14em;
+  grid-area: h;
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding: 90px 80px 40px;
+  margin-top: 8em;
+}
+
+.footerdiv,
+.footerdiv2 {
+  display: flex;
+  margin-top: -2em;
+  justify-content: space-between;
+}
+
+.icons {
+  margin-right: -18px;
+}
+
+.button {
+  display: none;
+}
+
+.icons > img {
+  padding-left: 1em;
+}
+
+.toggle-img,
+.icons2 {
+  display: none;
+}
+
+.hamburger,
+.close {
+  display: none;
+}
+
+.lists {
+  margin: 4em -3em;
+}
+
+a:active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active {
+  -webkit-filter: invert(1) grayscale(1) blur(0);
+  filter: invert(1) grayscale(1) blur(0);
+}
