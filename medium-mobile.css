@@ -48,10 +48,13 @@ nav > img {
   transition: transform 0.6s ease-in-out;
   margin-top: -70px;
   line-height: 2rem;
+  position: sticky;
 }
 
 .open-ul {
   transform: translateX(0%);
+  position: sticky;
+  height: 10000vh;
 }
 
 .toggle-img {
